@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Salary Tax Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Salary Tax Calculator</h1>
+            <p>Effortlessly calculate your income tax based on your annual salary.</p>
+        </div>
+    </header>
+    <main>
+        <section class="calculator">
+            <div class="container">
+                <h2>Calculate Your Tax Instantly</h2>
+                <form id="taxForm">
+                    <div class="form-group">
+                        <label for="salary">Enter Your Salary ($):</label>
+                        <input 
+                            type="number" 
+                            id="salary" 
+                            placeholder="Enter your annual salary" 
+                            required>
+                    </div>
+                    <button type="button" id="calculateBtn" class="btn-primary">Calculate Tax</button>
+                </form>
+                <div id="result" class="result">
+                    <h3>Calculation Result</h3>
+                    <p>Your Tax: $<span id="taxAmount">0</span></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Salary Tax Calculator. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
